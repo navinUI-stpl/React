@@ -43,8 +43,8 @@ const Side = ({ children, content, ...rest }: SideProps) => {
                     <span className="font-semibold">{`${APP_NAME}`}</span>{' '}
                 </span>
             </div>
-            <div className="col-span-2 flex flex-col justify-center items-center bg-white dark:bg-gray-800">
-                <div className="w-full xl:max-w-[450px] px-8 max-w-[380px]">
+            <div className="col-span-2 flex flex-col  bg-white dark:bg-gray-800">
+                <div className=" mx-16">
                     <div className="mb-8">{content}</div>
                     {children
                         ? cloneElement(children as React.ReactElement, {

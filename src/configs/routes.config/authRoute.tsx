@@ -25,7 +25,20 @@ const authRoute: Routes = [
         path: `/reset-password`,
         component: lazy(() => import('@/views/auth/ResetPassword')),
         authority: [],
-    },
+    }, 
+    {
+        key: 'userlist',
+        path: `/user-list`,
+        component: lazy(() => import('@/views/auth/Users')),
+        authority: [],
+    }, 
+     {
+        key: 'userform',
+        path: `/user-form/:id?`,
+        component: lazy(() => import('@/views/auth/Users/userForm')),
+        authority: [],
+    }, 
+
 ]
 
 export default authRoute

@@ -8,12 +8,12 @@ export type AppConfig = {
 }
 
 const appConfig: AppConfig = {
-    apiPrefix: '/api',
+    apiPrefix: 'https://684d550065ed08713915c846.mockapi.io/api/',
     authenticatedEntryPath: '/home',
     unAuthenticatedEntryPath: '/sign-in',
     tourPath: '/',
     locale: 'en',
-    enableMock: true,
+    enableMock: false,
 }
 
 export default appConfig
